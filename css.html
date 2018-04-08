@@ -1,0 +1,1417 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - Shapes of CSS</title>
+  
+  
+  
+  
+      <style>
+      * { 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font: 14px/1.4 Monaco, MonoSpace;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+a:hover, a:active {
+  color: black;
+}
+
+style { 
+  display: block; 
+  white-space: pre; 
+  background: #333; 
+  color: white; 
+  font: 12px Monaco; 
+  padding: 0 15px; 
+  word-wrap:break-word;
+}
+*/di bawahini adalah code pre */
+style,style code{color:#000}style{background:#9fa2a8;padding:8px 10px;overflow:auto;max-width:auto;text-align:left;margin:10px auto;brder-left:2px solid #000}style{font-family:Consolas,Monaco,'Andale Mono',monospace;white-space:initial;word-spacing:normal;word-break:normal;font-size:15px;line-height:1.3em}code{color:#000}style{-webkit-user-select:all;-moz-user-select:all;-ms-user-select:all;user-select:all}blockquote{font-family:Georgia,serif;color:#000;border-left:3px solid #000;padding-left:118px}
+#page-wrap { 
+  width: auto; 
+  margin: 80px auto; 
+  padding: 0px; 
+  background: #fff; 
+  -webkit-border-radius: 0px;
+  -moz-border-radius:    0px; 
+  border-radius:         0px;
+}
+
+h1 { 
+  font: bold italic 20px "atrament-web-1","atrament-web-2", Georgia, Serif; 
+  margin: 0 0 20px 0; }
+h2 { 
+  font: bold italic 14px "atrament-web-1","atrament-web-2", Georgia, Serif; 
+}
+h1 > span { 
+  color: red; 
+}
+
+.shape { 
+  padding: 20px; 
+}
+.shape > div { 
+  margin: 20px 0; 
+}
+.shape > h2 { 
+  background: rgba(0,0,0,0.15); 
+  padding: 0px; 
+  width: 100%; 
+  text-indent: 50px; 
+  margin: 0px 0 0 -0px; 
+  position: relative;
+}
+.shape > h2 > a {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 14px;
+}
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  
+	<div id="page-wrap">
+
+		<h1>bentuk  <span>bentuk</span>  CSS</h1>
+
+		<p>
+Semua yang ada di bawah hanya menggunakan satu elemen HTML. Segala jenis CSS berjalan, asalkan didukung degan  browser..</p>
+
+		<div id="shapes">
+
+				<div class="shape">
+					<h2>Square</h2>
+					<div id="square"></div>
+					<style contenteditable>
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Rectangle</h2>
+					<div id="rectangle"></div>
+					<style contenteditable>
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+					</style>
+
+
+			</div>
+
+				<div class="shape">
+					<h2>Circle</h2>
+					<div id="circle"></div>
+					<style contenteditable>
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/* Cleaner, but slightly less support: use "50%" as value */
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Oval</h2>
+					<div id="oval"></div>
+					<style contenteditable>
+#oval {
+	width: 200px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+/* Cleaner, but slightly less support: use "50%" as value */
+					</style>
+
+				</div>
+
+
+				<div class="shape">
+					<h2>Triangle Up</h2>
+					<div id="triangle-up"></div>
+
+					<style contenteditable>
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Down</h2>
+					<div id="triangle-down"></div>
+					<style contenteditable>
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Left</h2>
+					<div id="triangle-left"></div>
+					<style contenteditable>
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Right</h2>
+					<div id="triangle-right"></div>
+					<style contenteditable>
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+
+
+				<div class="shape">
+					<h2>Triangle Top Left</h2>
+					<div id="triangle-topleft"></div>
+					<style contenteditable>
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-right: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+				<h2>Triangle Top Right</h2>
+				<div id="triangle-topright"></div>
+				<style contenteditable>
+#triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-left: 100px solid transparent;
+
+}
+				</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Bottom Left</h2>
+					<div id="triangle-bottomleft"></div>
+					<style contenteditable>
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-right: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Bottom Right</h2>
+					<div id="triangle-bottomright"></div>
+					<style contenteditable>
+#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-left: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+
+					<h2>Curved Tail Arrow</h2>
+
+					<div id="curvedarrow"></div>
+
+					<style contenteditable>
+#curvedarrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid red;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+#curvedarrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid red;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Trapezoid</h2>
+
+					<div id="trapezoid"></div>
+
+					<style contenteditable>
+#trapezoid {
+	border-bottom: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Parallelogram</h2>
+
+					<div id="parallelogram"></div>
+
+					<style contenteditable>
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Star (6-points)</h2>
+
+					<div id="star-six"></div>
+
+					<style contenteditable>
+#star-six {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Star (5-points) </h2>
+
+					<div id="star-five"></div>
+
+					<style contenteditable>
+#star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Pentagon</h2>
+
+					<div id="pentagon"></div>
+
+					<style contenteditable>
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Hexagon</h2>
+
+					<div id="hexagon"></div>
+
+					<style contenteditable>
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Octagon</h2>
+
+					<div id="octagon"></div>
+
+					<style contenteditable>
+#octagon {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+}
+
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 29px solid red;
+	border-left: 29px solid #eee;
+	border-right: 29px solid #eee;
+	width: 42px;
+	height: 0;
+}
+
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 29px solid red;
+	border-left: 29px solid #eee;
+	border-right: 29px solid #eee;
+	width: 42px;
+	height: 0;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Heart </h2>
+
+					<div id="heart"></div>
+
+					<style contenteditable>
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Infinity </h2>
+
+					<div id="infinity"></div>
+
+					<style contenteditable>
+#infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Square </h2>
+
+					<div id="diamond"></div>
+
+					<style scoped contenteditable>
+#diamond {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -50px;
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: red;
+}
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Shield </h2>
+
+					<div id="diamond-shield"></div>
+
+					<style scoped contenteditable>
+#diamond-shield {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 20px solid red;
+	position: relative;
+	top: -50px;
+}
+#diamond-shield:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 20px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid red;
+}
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Narrow </h2>
+
+					<div id="diamond-narrow"></div>
+
+					<style scoped contenteditable>
+#diamond-narrow {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 70px solid red;
+	position: relative;
+	top: -50px;
+}
+#diamond-narrow:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 70px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid red;
+}
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Cut Diamond </h2>
+
+					<div id="cut-diamond"></div>
+
+					<style scoped contenteditable>
+#cut-diamond {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+#cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Egg</h2>
+
+					<div id="egg"></div>
+
+					<style scoped contenteditable>
+#egg {
+   display:block;
+   width: 126px;
+   height: 180px;
+   background-color: red;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Pac-Man</h2>
+
+					<div id="pacman"></div>
+
+					<style scoped contenteditable>
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Talk Bubble</h2>
+
+					<div id="talkbubble"></div>
+
+					<style scoped contenteditable>
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>12 Point Burst </h2>
+
+					<div id="burst-12"></div>
+
+					<style scoped contenteditable>
+#burst-12 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+}
+#burst-12:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>8 Point Burst </h2>
+
+					<div id="burst-8"></div>
+
+					<style scoped contenteditable>
+#burst-8 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20eg);
+}
+#burst-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Yin Yang </h2>
+
+					<div id="yin-yang"></div>
+
+					<style scoped contenteditable>
+#yin-yang {
+	width: 96px;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+}
+
+#yin-yang:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+}
+
+#yin-yang:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius:100%;
+	width: 12px;
+	height: 12px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Badge Ribbon </h2>
+
+					<div id="badge-ribbon"></div>
+
+					<style scoped contenteditable>
+#badge-ribbon {
+ position: relative;
+ background: red;
+ height: 100px;
+ width: 100px;
+ -moz-border-radius:    50px;
+ -webkit-border-radius: 50px;
+ border-radius:         50px;
+}
+
+#badge-ribbon:before,
+#badge-ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid red;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  -webkit-transform: rotate(-140deg);
+  -moz-transform:    rotate(-140deg);
+  -ms-transform:     rotate(-140deg);
+  -o-transform:      rotate(-140deg);
+}
+
+#badge-ribbon:after {
+  left: auto;
+  right: -10px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform:    rotate(140deg);
+  -ms-transform:     rotate(140deg);
+  -o-transform:      rotate(140deg);
+}
+
+</style>
+
+				</div>
+
+        <div class="shape">
+
+          <h2>Space Invader </h2>
+
+          <div id="space-invader"></div>
+
+          <style scoped contenteditable>
+#space-invader{
+
+  box-shadow:
+    0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+
+    margin: 50px 0 70px 65px;
+  }
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>TV Screen</h2>
+
+          <div id="tv"></div>
+
+          <style scoped contenteditable>
+#tv {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin: 20px 0;
+  background: red;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+}
+#tv:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Chevron </h2>
+
+          <div id="chevron"></div>
+
+          <style scoped contenteditable>
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 60px;
+  width: 200px;
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  -webkit-transform: skew(0deg, 6deg);
+  -moz-transform: skew(0deg, 6deg);
+  -ms-transform: skew(0deg, 6deg);
+  -o-transform: skew(0deg, 6deg);
+  transform: skew(0deg, 6deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  -webkit-transform: skew(0deg, -6deg);
+  -moz-transform: skew(0deg, -6deg);
+  -ms-transform: skew(0deg, -6deg);
+  -o-transform: skew(0deg, -6deg);
+  transform: skew(0deg, -6deg);
+}​
+
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Magnifying Glass</h2>
+
+          <div id="magnifying-glass"></div>
+
+          <style contenteditable>
+#magnifying-glass
+{
+ font-size: 10em; /* This controls the size. */
+ display: inline-block;
+ width: 0.4em;
+ height: 0.4em;
+ border: 0.1em solid red;
+ position: relative;
+ border-radius: 0.35em;
+}
+#magnifying-glass::before
+{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: red;
+ width: 0.35em;
+ height: 0.08em;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+          </style>
+
+        </div>
+
+		</div><!-- shapes -->
+
+	</div><!-- page wrap -->
+
+ <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.bsa_it_ad {
+		padding: 8px 4px 8px 12px !important;
+		position: relative;
+		border: 0 !important;
+		background: #D6D5D5 !important;
+		border-top: 0 !important;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	.bsa_it_ad:before, .bsa_it_ad:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #989898;
+		border-bottom: 6px solid #989898;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.bsa_it_ad:before {
+		top: 0;
+		left: 12px;
+		z-index: -2;
+		background: #6C6666;
+		border-bottom: 12px solid #6C6666;
+	}
+
+	.bsa_it_ad a {
+	  margin: 0 !important;
+		padding: 0 !important;
+	}
+	.bsa_it_ad a img {
+	  border: 0 !important;
+		position: static !important;
+	}
+	.bsa_it_ad a:hover img {
+		margin: 0 !important;
+	}
+	.bsa_it_ad a:hover {
+	  background: none !important;
+	}
+	.bsa_it_i {
+		margin: 0 15px 0 0 !important;
+	}
+	.bsa_it_t {
+		font-size: 14px !important;
+		margin: 12px 0 0 0 !important;
+	}
+	.bsa_it_d {
+		padding-right: 10px;
+	}
+	.bsa_it_p{
+		display: none !important;
+	}
+	#demo-bar-ad {
+		width: 416px;
+		position: absolute;
+		right: 0;
+		top: -20px;
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	#bsap_aplink {
+		position: absolute;
+		color: #999;
+		text-decoration: none;
+		bottom: 8px !important;
+		right: 8px !important;
+		padding: 0 !important;
+	}
+	.bsa_it_p a:hover {
+		background:none !important;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #e18728;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		box-shadow: 0 0 10px black;
+		padding: 20px 0 15px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#demo-top-bar:before, #demo-top-bar:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #e18728;
+		border-bottom: 6px solid #8F5314;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	#demo-top-bar:before {
+		top: 0;
+		left: 12px;
+		background: #6C6666;
+		border-bottom: 12px solid #62390E;
+	}
+
+	#demo-bar-buttons {
+		display: inline-block;
+		width: 236px;
+		text-align: center;
+		vertical-align: top;
+		font-size: 0;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		color: white;
+		display: block;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		color: #333;
+	}
+
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+
+<script type="text/javascript">
+	(function(){ var bsa = document.createElement('script'); bsa.type = 'text/javascript'; bsa.async = true; bsa.src = '//s3.buysellads.com/ac/bsa.js'; (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa); })();
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-68528-29']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga); })();
+</script>
+</body>
+
+</html>
+  
+  
+  
+
+    <script >
+      /*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * atrament-web-1:
+ *   - http://typekit.com/eulas/00000000000000003b9afb0a
+ * chunk-1:
+ *   - http://typekit.com/eulas/00000000000000000000d759
+ *
+ * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+ */
+if(!window.Typekit)window.Typekit={};window.Typekit.config={"a":"3603","c":[".tk-chunk","\"chunk-1\",\"chunk-2\",serif",".tk-atrament-web","\"atrament-web-1\",\"atrament-web-2\",sans-serif"],"dl":"AAAAVwAAAAqsEjsLylIb3wBPFxc","fi":[1349,1720],"fc":[{"id":1349,"family":"chunk-1","src":"https://use.typekit.com/af/1eb570/00000000000000000000d759/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"400","style":"normal","subset_id":2}},{"id":1720,"family":"atrament-web-1","src":"https://use.typekit.com/af/794a46/00000000000000003b9afb0a/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"700","style":"italic","subset_id":2}}],"fn":["atrament-web-1",["i7"],"chunk-1",["n4"]],"hn":"use.typekit.com","ht":"tk","js":"1.19.2","kt":"pjd4baf","l":"typekit","ps":1,"ping":"https://p.typekit.net/p.gif{?s,k,ht,h,f,a,js,app,e,_}","pm":true,"type":"configurable","vft":false};
+/*{"k":"1.19.2","auto_updating":true,"last_published":"2017-07-15 14:48:08 UTC"}*/
+;(function(window,document,undefined){if(!document.querySelector){document.documentElement.className+=" wf-inactive";return;}function aa(a,b,c){return a.call.apply(a.bind,arguments)}function ba(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}}function h(a,b,c){h=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return h.apply(null,arguments)}var l=Date.now||function(){return+new Date};function ca(a){this.g=a||"-"}ca.prototype.b=function(a){for(var b=[],c=0;c<arguments.length;c++)b.push(arguments[c].replace(/[\W_]+/g,"").toLowerCase());return b.join(this.g)};function da(){var a=[{name:"font-family",value:m.c[n+1]}];this.g=[m.c[n]];this.b=a}function fa(a){for(var b=a.g.join(","),c=[],d=0;d<a.b.length;d++){var e=a.b[d];c.push(e.name+":"+e.value+";")}return b+"{"+c.join("")+"}"};function q(a,b){return(a&65535)*b+(((a>>>16)*b&65535)<<16)};function r(a,b){this.b=b||Array(Math.ceil(a/32));if(!b)for(var c=0;c<this.b.length;c++)this.b[c]=0}r.prototype.set=function(a){if(Math.floor(a/32+1)>this.b.length)throw Error("Index is out of bounds.");var b=Math.floor(a/32);this.b[b]|=1<<a-32*b};r.prototype.has=function(a){if(Math.floor(a/32+1)>this.b.length)throw Error("Index is out of bounds.");var b=Math.floor(a/32);return!!(this.b[b]&1<<a-32*b)};function ga(a,b,c){this.b=a;this.i=b;this.g=new r(a,c)}var ha=[2449897292,4218179547,2675077685,1031960064,1478620578,1386343184,3194259988,2656050674,3012733295,2193273665];
+ga.prototype.has=function(a){if("string"!==typeof a&&"number"!==typeof a)throw Error("Value should be a string or number.");for(var b="number"===typeof a,c=0;c<this.i;c++){var d;if(b)d=q(a&4294967295,3432918353),d=d<<15|d>>>17,d=q(d,461845907),d^=ha[c]||0,d=d<<13|d>>>19,d=q(d,5)+3864292196,d^=4,d^=d>>>16,d=q(d,2246822507),d^=d>>>13,d=q(d,3266489909),d^=d>>>16,d=(d>>>0)%this.b;else{d=ha[c]||0;var e,f,g=a.length%4,k=a.length-g;for(f=0;f<k;f+=4)e=(a.charCodeAt(f+0)&4294967295)<<0|(a.charCodeAt(f+1)&
+4294967295)<<8|(a.charCodeAt(f+2)&4294967295)<<16|(a.charCodeAt(f+3)&4294967295)<<24,e=q(e,3432918353),e=e<<15|e>>>17,e=q(e,461845907),d^=e,d=d<<13|d>>>19,d=q(d,5)+3864292196;e=0;switch(g){case 3:e^=(a.charCodeAt(f+2)&4294967295)<<16;case 2:e^=(a.charCodeAt(f+1)&4294967295)<<8;case 1:e^=(a.charCodeAt(f+0)&4294967295)<<0,e=q(e,3432918353),e=e<<15|e>>>17,e=q(e,461845907),d^=e}d^=a.length;d=q(d^d>>>16,2246822507);d=q(d^d>>>13,3266489909);d=((d^d>>>16)>>>0)%this.b}if(!this.g.has(d))return!1}return!0};function ia(a){a.length%4&&(a+=Array(5-a.length%4).join("="));a=a.replace(/\-/g,"+").replace(/\_/g,"/");if(window.atob)a=window.atob(a);else{a=a.replace(/=+$/,"");if(1==a.length%4)throw Error("'atob' failed: The string to be decoded is not correctly encoded.");for(var b=0,c,d,e=0,f="";d=a.charAt(e++);~d&&(c=b%4?64*c+d:d,b++%4)?f+=String.fromCharCode(255&c>>(-2*b&6)):0)d="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".indexOf(d);a=f}c=[];for(b=0;b<a.length;b+=4)c.push(a.charCodeAt(b)<<
+24|a.charCodeAt(b+1)<<16|a.charCodeAt(b+2)<<8|a.charCodeAt(b+3)<<0);a=c.shift();b=c.shift();this.b=new ga(a,b,c)}ia.prototype.has=function(a){if(""===a)return!0;for(a=a.split(".");a.length;){var b=a.join("."),c="*."+b;if(this.b.has(b)||this.b.has(c)||this.b.has(encodeURIComponent(b))||this.b.has(encodeURIComponent(c)))return!0;a.shift()}return!1};function t(a,b,c,d){b=a.b.createElement(b);if(c)for(var e in c)c.hasOwnProperty(e)&&("style"==e?b.style.cssText=c[e]:b.setAttribute(e,c[e]));d&&b.appendChild(a.b.createTextNode(d));return b}function u(a,b,c){a=a.b.getElementsByTagName(b)[0];a||(a=document.documentElement);a.insertBefore(c,a.lastChild)}
+function ja(a,b){a.b.body?b():a.b.addEventListener?a.b.addEventListener("DOMContentLoaded",b):a.b.attachEvent("onreadystatechange",function(){"interactive"!=a.b.readyState&&"complete"!=a.b.readyState||b()})}function v(a){a.parentNode&&a.parentNode.removeChild(a)}
+function w(a,b,c){var d=b||[];c=c||[];b=a.className.split(/\s+/);for(var e,f=0;f<d.length;f+=1){e=!1;for(var g=0;g<b.length;g+=1)if(d[f]===b[g]){e=!0;break}e||b.push(d[f])}d=[];for(f=0;f<b.length;f+=1){e=!1;for(g=0;g<c.length;g+=1)if(b[f]===c[g]){e=!0;break}e||d.push(b[f])}a.className=d.join(" ").replace(/\s+/g," ").replace(/^\s+|\s+$/,"")}function ka(a,b){for(var c=a.className.split(/\s+/),d=0,e=c.length;d<e;d++)if(c[d]==b)return!0;return!1}
+function x(a,b){var c=t(a,"style");c.setAttribute("type","text/css");c.styleSheet?(u(a,"head",c),c.styleSheet.cssText=b):(c.appendChild(document.createTextNode(b)),u(a,"head",c))}
+function la(a,b,c){var d=a.b.getElementsByTagName("head")[0];if(d){var e=t(a,"script",{src:b}),f=!1;e.onload=e.onreadystatechange=function(){f||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(f=!0,c&&c(null),e.onload=e.onreadystatechange=null,"HEAD"==e.parentNode.tagName&&d.removeChild(e))};d.appendChild(e);setTimeout(function(){f||(f=!0,c&&c(Error("Script load timeout")))},5E3)}};function A(a,b,c){this.g=a.g.document.documentElement;this.j=b;this.m=c;this.b=new ca("-");this.o=!1!==b.events;this.i=!1!==b.classes}function B(a){if(a.i){var b=ka(a.g,a.b.b("wf","active")),c=[],d=[a.b.b("wf","loading")];b||c.push(a.b.b("wf","inactive"));w(a.g,c,d)}C(a,"inactive")}function C(a,b,c){if(a.o&&a.j[b])try{if(c)a.j[b](c.b,D(c));else a.j[b]()}catch(d){console.error('Typekit: Error in "'+b+'" callback',d)}if(a.m[b])if(c)a.m[b](c.b,D(c));else a.m[b]()};function ma(a,b,c){c=c||{};this.b=a;this.g=b;this.weight=c.weight||"400";this.style=c.style||"normal";this.B=c.primer||void 0;this.C=c.subset_id||void 0}function E(a){return("tk-"+a.b).slice(0,26)+"-"+D(a)}function F(a,b){return new ma(b,a.g,{weight:a.weight,style:a.style,B:a.B,C:a.C})}function D(a){return a.style.charAt(0)+a.weight.charAt(0)}function na(a){var b=a.charAt(0);a=a.charAt(1);/[1-9]/.test(a)||(a=4);return{style:"i"===b?"italic":"o"===b?"oblique":"normal",weight:a+"00"}};function oa(){var a=document,b=navigator.userAgent;if(/MSIE|Trident/.test(b)&&(a.documentMode?9>a.documentMode:1))b="i";else{a:{if(/AppleWebKit/.test(b)&&/Android/.test(b)&&!/OPR|Chrome|CrMo|CriOS/.test(b)&&(a=/Android ([^;)]+)/.exec(b))&&a[1]){a=parseFloat(a[1]);a=3.1<=a&&4.1>a;break a}a=!1}if(!a)a:{if(/Silk/.test(b)&&/Linux|Ubuntu|Android/.test(b)&&(b=/Silk\/([\d\._]+)/.exec(b))&&b[1]){a=2<=parseFloat(b[1]);break a}a=!1}b=a?"j":"k"}return b};function G(a){this.b=a}function H(a,b){return a.b.replace(/\{([^\{\}]+)\}/g,function(a,d){if("?"==d.charAt(0)){for(var e=d.slice(1).split(","),f=[],g=0;g<e.length;g++)b[e[g]]&&f.push(e[g]+"="+encodeURIComponent(b[e[g]]));return f.length?"?"+f.join("&"):""}return encodeURIComponent(b[d]||"")})};function I(){this.b=[]}function qa(a,b){for(var c=0;c<b.length;c++)a.b.push(b[c])}function J(a,b){for(var c=0;c<a.b.length;c++)b(a.b[c],c,a)}
+function ra(a,b){if("i"===b){var c={},d=new I;J(a,function(a){c[a.b]||(c[a.b]={});c[a.b][a.weight]||(c[a.b][a.weight]=[]);c[a.b][a.weight].push(a)});for(var e in c){for(var f=[400,300,200,100,500,600,700,800,900],g=400,k=0;k<f.length;k++)if(g=f[k],c[e][g]){qa(d,c[e][g]);break}f=[700,800,900,600,500,400,300,200,100];for(k=0;k<f.length;k++){var p=f[k];if(c[e][p]&&g!==p){qa(d,c[e][p]);break}}}J(a,function(a){a=F(a,a.b.replace(/(-1|-2)$/,"").slice(0,28)+"-"+D(a));d.b.push(a)});return d}return"x"===b?
+new I:a}function sa(a,b,c){for(var d=[],e=0;e<b.length;e++){var f=b[e],g=H(new G(a.g),{format:f,primer:a.B,subset_id:a.C,fvd:D(a),extension:ta(f),token:c,v:"3"});"i"===f?d.push("url("+g+")"):d.push("url("+g+') format("'+ua(f)+'")')}return d.join(",")}function va(a,b,c,d){if("x"===b)return"";var e=[];e.push("font-family:"+(d?E(a):a.b));b="k"===b?sa(a,["l","d","a"],c):sa(a,[b],c);e.push("src:"+b);e.push("font-weight:"+a.weight);e.push("font-style:"+a.style);return"@font-face{"+e.join(";")+";}"}
+function ua(a){switch(a){case "d":return"woff";case "i":return"eot";case "l":return"woff2";default:return"opentype"}}function ta(a){switch(a){case "d":return"woff";case "i":return"eot";case "l":return"woff2";default:return"otf"}}function K(a,b,c,d){var e=[];J(a,function(a){e.push(va(a,b,c,d))});return e.join("")};function L(a,b){this.g=a;this.i=b;this.b=t(this.g,"span",{"aria-hidden":"true"},this.i)}function M(a){u(a.g,"body",a.b)}
+function N(a){return"display:block !important;position:absolute !important;top:-9999px !important;left:-9999px !important;font-size:300px !important;width:auto !important;height:auto !important;line-height:normal !important;margin:0 !important;padding:0 !important;font-variant:normal !important;white-space:nowrap !important;font-family:"+a.b+" !important;font-weight:"+a.weight+" !important;font-style:"+a.style+" !important;"};function wa(a,b,c,d,e,f,g,k){this.D=a;this.H=b;this.u=c;this.b=d;this.w=g||"BESbswy";this.g={};this.I=e||3E3;this.G=k;this.A=f||null;this.i=new L(this.u,this.w);this.j=new L(this.u,this.w);this.m=new L(this.u,this.w);this.o=new L(this.u,this.w);a=this.G?E(this.b):this.b.b;this.i.b.style.cssText=N(F(this.b,a+",serif"));this.j.b.style.cssText=N(F(this.b,a+",sans-serif"));this.m.b.style.cssText=N(F(this.b,"serif"));this.o.b.style.cssText=N(F(this.b,"sans-serif"));M(this.i);M(this.j);M(this.m);M(this.o)}
+var O={K:"serif",J:"sans-serif"},P=null;function ya(){if(null===P){var a=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);P=!!a&&(536>parseInt(a[1],10)||536===parseInt(a[1],10)&&11>=parseInt(a[2],10))}return P}wa.prototype.start=function(){this.g.serif=this.m.b.offsetWidth;this.g["sans-serif"]=this.o.b.offsetWidth;this.F=l();za(this)};function Aa(a,b,c){for(var d in O)if(O.hasOwnProperty(d)&&b===a.g[O[d]]&&c===a.g[O[d]])return!0;return!1}
+function za(a){var b=a.i.b.offsetWidth,c=a.j.b.offsetWidth,d;(d=b===a.g.serif&&c===a.g["sans-serif"])||(d=ya()&&Aa(a,b,c));d?l()-a.F>=a.I?ya()&&Aa(a,b,c)&&(!a.A||a.A.hasOwnProperty(a.b.b))?Ba(a,a.D):Ba(a,a.H):Ca(a):Ba(a,a.D)}function Ca(a){setTimeout(h(function(){za(this)},a),50)}function Ba(a,b){setTimeout(h(function(){v(this.i.b);v(this.j.b);v(this.m.b);v(this.o.b);b(this.b)},a),0)};function Da(a,b,c,d,e,f,g){this.i=a;this.u=b;this.b=d;this.m=c;this.g=e||3E3;this.o=f||void 0;this.j=g}Da.prototype.start=function(){var a=this.m.g.document,b=this,c=l(),d=new Promise(function(d,e){function k(){l()-c>=b.g?e():a.fonts.load(b.b.style+" "+b.b.weight+" 300px "+(b.j?E(b.b):b.b.b),b.o).then(function(a){1<=a.length?d():setTimeout(k,25)},function(){e()})}k()}),e=new Promise(function(a,c){setTimeout(c,b.g)});Promise.race([e,d]).then(function(){b.i(b.b)},function(){b.u(b.b)})};function Ea(a,b,c,d){this.w=a;this.b=b;this.g=0;this.o=this.m=!1;this.A=c;this.u=d}var Q=null;
+function Fa(a,b,c){var d={},e=b.b.length;if(!e&&c)B(a.b);else{a.g+=e;c&&(a.m=c);var f=[];J(b,function(b){var c=a.b;c.i&&w(c.g,[c.b.b("wf",b.b,D(b),"loading")]);C(c,"fontloading",b);c=null;if(null===Q)if(window.FontFace){var e=/Gecko.*Firefox\/(\d+)/.exec(window.navigator.userAgent),pa=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(window.navigator.userAgent);Q=e?42<parseInt(e[1],10):pa&&/Apple/.exec(window.navigator.vendor)?603<=parseInt(pa[1],10):!0}else Q=!1;Q?c=new Da(h(a.i,a),h(a.j,
+a),a.w,b,a.A,"BESbswy\ue000\ue001\ue002\ue003\ue004\ue005\ue006",a.u):c=new wa(h(a.i,a),h(a.j,a),a.w,b,a.A,d,"BESbswy\ue000\ue001\ue002\ue003\ue004\ue005\ue006",a.u);f.push(c)});for(b=0;b<f.length;b++)f[b].start()}}Ea.prototype.i=function(a){var b=this.b;b.i&&w(b.g,[b.b.b("wf",a.b,D(a),"active")],[b.b.b("wf",a.b,D(a),"loading"),b.b.b("wf",a.b,D(a),"inactive")]);C(b,"fontactive",a);this.o=!0;Ga(this)};
+Ea.prototype.j=function(a){var b=this.b;if(b.i){var c=ka(b.g,b.b.b("wf",a.b,D(a),"active")),d=[],e=[b.b.b("wf",a.b,D(a),"loading")];c||d.push(b.b.b("wf",a.b,D(a),"inactive"));w(b.g,d,e)}C(b,"fontinactive",a);Ga(this)};function Ga(a){!--a.g&&a.m&&(a.o?(a=a.b,a.i&&w(a.g,[a.b.b("wf","active")],[a.b.b("wf","loading"),a.b.b("wf","inactive")]),C(a,"active")):B(a.b))};function R(a){this.b=a;this.m=null;this.g=[];this.j=this.w=null;this.u=new I;this.o=this.i=null}var Ha=null,S="00000000000000003b9b12ea 00000000000000003b9b12ed 00000000000000003b9b12ef 00000000000000003b9b12f0 00000000000000003b9b12f2 00000000000000003b9b12f3".split(" ");function Ia(){null===Ha&&(Ha=window.CSS&&window.CSS.supports&&CSS.supports("font-variation-settings",'"wght" 400'));return Ha}R.prototype.supportsConfiguredBrowser=function(){return!0};
+R.prototype.init=function(){if(0<this.g.length){for(var a=[],b=0;b<this.g.length;b++)a.push(fa(this.g[b]));x(this.b,a.join(""))}};
+R.prototype.load=function(a,b,c){var d=this;c=c||{};if(this.j&&(a=location.hostname,!this.j.has(a))){console.error('Typekit: the domain "'+a+'" isn\'t in the list of published domains for kit "'+this.w+'".');B(new A(this.b,c,{}));return}a=c.timeout;var e=!!c.async,f=oa(),g=ra(this.u,f);c=new A(this.b,c,{active:function(){if(e){var a=K(g,f,d.i,!1);x(d.b,a)}if(d.m){var a=d.m,b=d.b,c=a.m,k=(window.__adobewebfontsappname__||a.app||"").toString().substr(0,20),b=b.g.location.hostname||b.i.location.hostname,
+p=[],y=[];window.Typekit?(window.Typekit.fonts||(window.Typekit.fonts=[]),y=window.Typekit.fonts):window.TypekitPreview&&(window.TypekitPreview.fonts||(window.TypekitPreview.fonts=[]),y=window.TypekitPreview.fonts);for(var z=0;z<a.b.length;z++){for(var xa=!1,ea=0;ea<y.length;ea++)if(a.b[z]===y[ea]){xa=!0;break}xa||(p.push(a.b[z]),y.push(a.b[z]))}p.length&&Ja(H(c,{s:a.j,k:a.o,app:k,ht:a.i,h:b,f:p.join("."),a:a.g,js:a.version,e:"js",_:(+new Date).toString()}))}},inactive:function(){if(e){var a=K(g,
+f,d.i,!1);x(d.b,a)}}});if(g.b.length){var k=K(g,f,this.i,e);x(this.b,k);var p=new Ea(this.b,c,a,e);ja(d.b,function(){Fa(p,g,b)})}else B(c)};function Ka(a,b){this.j=a;this.g=b;this.b=[]}Ka.prototype.i=function(a){this.b.push(a)};Ka.prototype.load=function(a,b){var c=a,d=b||{};"string"==typeof c?c=[c]:c&&c.length||(d=c||{},c=[]);if(c.length)for(var e=this,f=c.length,g=0;g<c.length;g++)La(this,c[g],function(){--f||Ma(e,d)});else Ma(this,d)};function La(a,b,c){b=H(a.j,{id:b});la(a.g,b,c)}
+function Ma(a,b){if(a.b.length){for(var c=new A(a.g,b,{}),d=0;d<a.b.length;d++)a.b[d].init();c.i&&w(c.g,[c.b.b("wf","loading")]);C(c,"loading");for(c=0;c<a.b.length;c++)a.b[c].load(null,c==a.b.length-1,b);a.b=[]}};function Na(){var a=m.ps,b=m.ht,c=Oa,d=m.a,e=m.kt,f=m.js,g=m.l;this.m=new G(m.ping);this.j=a;this.i=b;this.b=c||[];this.g=d||null;this.o=e||null;this.version=f||null;this.app=g||null}function Ja(a){var b=new Image(1,1),c=!1;b.src=a;b.onload=function(){c=!0;b.onload=null};setTimeout(function(){c||(b.src="about:blank",b.onload=null)},3E3)};var Pa=new function(){var a=window;this.g=this.i=a;this.b=this.g.document};window.Typekit||(window.Typekit={});if(!window.Typekit.load){var T=new Ka(new G("//"+(window.Typekit.config||{}).hn+"/{id}.js"),Pa);window.Typekit.load=function(){T.load.apply(T,arguments)};window.Typekit.addKit=function(){T.i.apply(T,arguments)}}for(var U,m=window.Typekit.config||{},Oa=[],V=m.fc,Qa=0;Qa<V.length;Qa++)Oa.push(V[Qa].id);U=new R(Pa);m.ping&&(U.m=new Na);m.vft&&(U.o=m.vft);
+if(m.fc)for(var W=m.fc,X=0;X<W.length;X++){var Y=W[X].src,Ra=W[X].descriptors||{};if(U.o&&Ia()&&1===Ra.subset_id)for(var Z=0;Z<S.length;Z++)if(-1!==Y.indexOf(S[Z])){Y=Y.replace(S[Z],"00000000000000003b9b12ef");break}U.u.b.push(new ma(W[X].family,Y,W[X].descriptors))}if(m.dl){var Sa=m.dl;try{U.j=new ia(Sa)}catch(a){}}m.kt&&(U.w=m.kt);m.token&&(U.i=m.token);if(m.c)for(var n=0;n<m.c.length;n+=2)U.g.push(new da);window.Typekit.addKit(U);
+function Ta(){if(!Ia())return!1;for(var a=m.fc,b=0;b<a.length;b++)if(1===a[b].descriptors.subset_id)for(var c=0;c<S.length;c++)if(-1!==a[b].src.indexOf(S[c]))return!0;return!1}function Ua(a,b){var c=m.fc,d=na(b);if(!Ia()||!m.vft)return!1;for(var e=0;e<c.length;e++)if(c[e].family===a&&c[e].descriptors.weight===d.weight&&c[e].descriptors.style===d.style&&1===c[e].descriptors.subset_id)for(var f=0;f<S.length;f++)if(-1!==c[e].src.indexOf(S[f]))return!0;return!1}
+if(m.pm&&!window.WebFont&&1===Math.round(30*Math.random())){var Va=window.Typekit.load,Wa=[];window.Typekit.load=function(a){a=a||{};var b=a.active||function(){},c=a.fontactive||function(){},d=(new Date).getTime();a.active=function(){b();if(!window.XDomainRequest){var a=new Image,c=function(a){a={fonts:Wa,augmentations:[],font_loading:window.FontFace?"native":"non-native",active_duration:(new Date).getTime()-d,javascript_version:m.js,kit_type:"configurable",ad_blocker:a,test_group:Ta()};a=JSON.stringify(a);
+if(!window.XDomainRequest){var b=new XMLHttpRequest;b.open("POST","https://performance.typekit.net/");b.send(a)}};a.src="https://p.typekit.net/p.gif?";a.onload=function(){for(var a=!1,b=0;b<document.styleSheets.length;b++)if(null===document.styleSheets[b].href&&/ghostery-purple-box/.test(document.styleSheets[b].ownerNode.textContent)){a=!0;break}c(a)};a.onerror=function(){c(!0)}}};a.fontactive=function(a,b){c(a,b);var g;a:{g=na(b);for(var k=0;k<V.length;k++)if(V[k].family===a&&V[k].descriptors.weight===
+g.weight&&V[k].descriptors.style===g.style){g=V[k].id;break a}g=0}Wa.push({id:g,duration:(new Date).getTime()-d,dynamic:!1,weight:b.charAt(1)+"00",variable:Ua(a,b)})};Va(a)}}if(window.WebFont)try{window.Typekit.load()}catch(a){};}(this,document));
+    </script>
+
+
+
+  
+  
+
+</body>
+
+</html>
+ 
